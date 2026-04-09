@@ -20,6 +20,12 @@ dragonpilot (台灣FIT e-HEV 專用分支)
 
 安裝網址： https://installer.comma.ai/fit520/fit520
 
+LINE社群:
+https://line.me/ti/g2/g1r6D4mhEbRbY5P3wS5JTWXltfPcoNyirOpDUw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default
+
+安裝教學網址:
+https://youtu.be/gOpPX49-LvE
+
 ================================================================================================================================================================================
 # **🐲 dragonpilot - 賦予您的愛車「龍」之魂**
 
