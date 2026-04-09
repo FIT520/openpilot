@@ -173,6 +173,16 @@ class CarInterface(CarInterfaceBase):
         ret.wheelSpeedFactor = 1.025
       else:
         ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.8], [0.24]]  # TODO: can probably use some tuning
+# ========================
+    elif candidate == CAR.HONDA_FIT_EHEV_2021:
+      #ret.safetyConfigs[-1].safetyParam |= 8 # HondaSafetyFlags.RADARLESS
+      ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0, 4096], [0, 4096]]
+      ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.35], [0.11]] 
+      ret.lateralTuning.pid.kf = 0.00006     
+      ret.steerActuatorDelay = 0.1
+      ret.maxLateralAccel = 2.5
+    # ========================
+    
 
     elif candidate == CAR.ACURA_RDX:
       ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0, 1000], [0, 1000]]  # TODO: determine if there is a dead zone at the top end
