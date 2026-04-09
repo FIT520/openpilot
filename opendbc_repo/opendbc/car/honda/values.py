@@ -231,6 +231,14 @@ class CAR(Platforms):
     {Bus.pt: 'honda_bosch_radarless_generated'},
     flags=HondaFlags.BOSCH_RADARLESS,
   )
+    #==========================================================================
+  HONDA_FIT_EHEV_2021 = HondaBoschPlatformConfig(
+    [HondaCarDocs("Honda Fit e:HEV 2021", "All")],
+    CarSpecs(mass=2645 * CV.LB_TO_KG, wheelbase=2.53, steerRatio=12.1, centerToFrontRatio=0.41, tireStiffnessFactor=0.5, minSteerSpeed=23. * CV.KPH_TO_MS),
+    {Bus.pt: 'honda_bosch_radarless_generated'},
+    flags=HondaFlags.BOSCH_RADARLESS,
+  )
+  #=====================================================================
   HONDA_CITY_7G = HondaBoschPlatformConfig(
     [HondaCarDocs("Honda City (Brazil only) 2023", "All")],
     CarSpecs(mass=3125 * CV.LB_TO_KG, wheelbase=2.6, steerRatio=19.0, centerToFrontRatio=0.41, minSteerSpeed=23. * CV.KPH_TO_MS),
