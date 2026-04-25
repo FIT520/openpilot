@@ -109,7 +109,7 @@ class CarState(CarStateBase):
     # All Honda EPS cut off slightly above standstill, some much higher
     # Don't alert in the near-standstill range, but alert for per-vehicle configured minimums above that
     if CarControllerParams.STEER_GLOBAL_MIN_SPEED < ret.vEgo < (self.CP.minSteerSpeed + 0.5):
-      self.low_speed_alert = True
+      self.low_speed_alert = False
     elif ret.vEgo > (self.CP.minSteerSpeed + 1.):
       # TODO: better handle delayed steering enablement on ALT_RADAR cars
       self.low_speed_alert = False
