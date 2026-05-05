@@ -882,7 +882,6 @@ FW_VERSIONS = {
     (Ecu.fwdRadar, 0x18dab0f1, None): [
       b'8S102-TZK-PA20\x00\x00',
       b'8S102-TZK-PB10\x00\x00',
-      b'36161-TZA-J050\x00\x00',
     ],
     (Ecu.transmission, 0x18da1ef1, None): [
       b'28101-60E-F010\x00\x00',
