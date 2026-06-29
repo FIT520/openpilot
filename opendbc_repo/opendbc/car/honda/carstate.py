@@ -159,8 +159,6 @@ class CarState(CarStateBase, CarStateExt):
       ret.gearShifter = GearShifter.reverse if bool(cp.vl[self.car_state_scm_msg]["REVERSE_LIGHT"]) else GearShifter.drive
     else:
       gear_position = self.shifter_values.get(cp.vl[self.gearbox_msg]["GEAR_SHIFTER"], None)
-      if gear_position == "B":
-        gear_position = "D"
       ret.gearShifter = self.parse_gear_shifter(gear_position)
 
     ret.gasPressed = cp.vl["POWERTRAIN_DATA"]["PEDAL_GAS"] > 1e-5
