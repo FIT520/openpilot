@@ -521,6 +521,7 @@ FW_VERSIONS = {
       b'36161-TZA-J060\x00\x00',
       b'36161-TZA-J150\x00\x00',
       b'36161-TZA-J160\x00\x00',
+      b'36161-TZK-P130\x00\x00',
       b'36161-TZK-P140\x00\x00',
     ],
     (Ecu.transmission, 0x18da1ef1, None): [
