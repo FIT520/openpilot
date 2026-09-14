@@ -336,9 +336,9 @@ class CAR(Platforms):
       # TODO: add 2022-2023 fingerprints
       HondaCarDocs("Honda Fit (Taiwan) 2024-25", "All"),
     ],
-    CarSpecs(mass=1229, wheelbase=2.53, steerRatio=19.7, centerToFrontRatio=0.39, minSteerSpeed=23. * CV.KPH_TO_MS),
+    CarSpecs(mass=1229, wheelbase=2.53, steerRatio=19.7, centerToFrontRatio=0.39, minSteerSpeed=5. * CV.KPH_TO_MS),
     {Bus.pt: 'honda_bosch_radarless_generated'},
-    flags=HondaFlags.BOSCH_RADARLESS | HondaFlags.LKAS_MINSPEED_CUTOFF
+    flags=HondaFlags.BOSCH_RADARLESS | HondaFlags.BOSCH_TJA_CONTROL
   )
   ACURA_INTEGRA = HondaBoschPlatformConfig(
     [HondaCarDocs("Acura Integra 2023-26", "All")],
