@@ -161,7 +161,7 @@ class CarState(CarStateBase, CarStateExt):
 
     self.steer_control_active = bool(cp.vl[self.steer_status_msg]["STEER_CONTROL_ACTIVE"])
 
-    if (self.CP.carFingerprint == CAR.ACURA_MDX_4G) and (steer_status == "TJA_LOW_SPEED_LOCKOUT"):
+    if (self.CP.carFingerprint in (CAR.ACURA_MDX_4G, CAR.HONDA_FIT_4G)) and (steer_status == "TJA_LOW_SPEED_LOCKOUT"):
       ret.steerFaultPermanent = False
       ret.steerFaultTemporary = False
 
